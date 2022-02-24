@@ -5,7 +5,7 @@
 <title>Lab 6-2</title>
 
 <script type="text/Javascript">
-<!--
+// <!--
 
 /******************************************************
 
@@ -21,12 +21,11 @@ button's value attribute equal to Close. Add an onClick
 event handler to call the window.close() method.
 
 ******************************************************/
-  
-function smallWindow() {
+var myWindow =  open(' ', "DeezNutz", height='100', width='100') 
 
-  
-  
-  
+function smallWindow() {
+    myWindow.document.write('<form><input type="button" value="close" onclick=window.close();></form>')
+    
   
 }
 
