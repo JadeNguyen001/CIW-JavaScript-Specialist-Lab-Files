@@ -9,10 +9,10 @@
 
 //create citiesArray
 //Use New York, Los Angeles, Chicago
-var citiesArray = ["New York", "Los Angeles", "Chicago"]
-var len = citiesArray.length
+const citiesArray = ["New York", "Los Angeles", "Chicago"]
+citiesArray.sort();
+const len = citiesArray.length
 console.log(len)
-
 
 
 //-->
@@ -22,10 +22,14 @@ console.log(len)
 <h3>CIW JavaScript Specialist</h3>
 <hr />
 <script type="text/javascript">
-<!--
+//<!--
 
 //output citiesArray
+for (let i = 0; i < len; i++) {
+    document.write("<br />", citiesArray[i], "<br />")
+}
 
+alert(citiesArray[0] + " is now the first because the array is sorted to alphabetical order");
 
 
 
